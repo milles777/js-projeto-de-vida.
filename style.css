@@ -1,22 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-:root {
-    --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
-    --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
+:root{
+    --cor-de-fundo:#1e1e1e;
+    --verde: #6fff57;
+    --branco: #ffffff;
+    --botao-ativo: #3a375e;
     --botao-inativo: rgba(58, 55, 94, 0.5);
     --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
-body {
+body{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: "Chakra Petch", sans-serif;
 }
-
-
-.conteudo-principal {
+.conteudo-principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,21 +24,20 @@ body {
     margin: 0 auto;
 }
 
-.titulo-principal {
+.titulo-principal{
     text-align: left;
     width: 100%;
-    font-size: 32px;
+    font-size: 32px;    
 }
 
-.titulo-principal span {
-    color: var(--verde);
+.titulo-principal span{
+    color:var(--verde);
 }
 
-
-.botao {
+.botao{
     font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
-    color: var(--branco);
+    color:var(--branco);
     display: flex;
     justify-content: center;
     padding: 1em;
@@ -53,79 +50,49 @@ body {
     border-top: none;
 }
 
-.botao:first-child {
+.botao :first-child{
     border-radius: 40px 40px 0 0;
 }
-
-.botoes {
+.botoes{
     display: block;
 }
 
-.botao.ativo {
+.botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
 
-.abas-textos {
+.abas-textos{
     background-color: var(--texto-fundo);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
 
-.aba-conteudo.ativo {
+.aba-conteudo.ativo{
     display: block;
 }
 
-.aba-conteudo {
+.aba-conteudo{
     display: none;
 }
-
-.aba-conteudo-titulo-principal {
+.aba-conteudo-titulo-principal{
     font-size: 28px;
     text-align: center;
 }
 
-.aba-conteudo-titulo-secundario {
+.aba-conteudo-titulo-secundario{
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
 }
-
-.contador {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contador-digito {
-    padding: 0 16px;
-    text-align: center;
-    min-width: 100px;
-}
-
-.contador-digito-numero {
-    font-size: 80px;
-    margin: 0;
-
-}
-
-.contador-digito-texto {
-    color: var(--verde);
-    font-size: 20px;
-    margin: 0;
-
-}
-
-@media screen and (min-width: 768px) {
-    .botoes {
+@media screen and (min-width: 768px){
+    .botoes{
         display: flex;
+    }    
+    .botao :first-child{
+    border-radius: 40px 0 0 0;
     }
-
-    .botao:first-child {
-        border-radius: 40px 0 0 0;
-    }
-
-    .botao:last-child {
-        border-radius: 0 40px 0 0;
+    .botao :last-child{
+    border-radius:0 40px 0 0;
     }
 }
